@@ -1,0 +1,64 @@
+Algoritmo Ejercicio_16_ciclos
+	Definir listado, i, num, a, b, c Como Entero
+	Escribir 'Escriba un numero'
+	Leer num
+	Escribir '|---------------------------------------------------------|'
+	Escribir '| Escoja acontinuacion la opcion para realizar los ciclos |'
+	Escribir '|---------------------------------------------------------|'
+	Escribir '|                                                         |'
+	Escribir '|                                                         |'
+	Escribir '|                   1. Ciclo PARA                         |'
+	Escribir '|                                                         |'
+	Escribir '|                   2. Ciclo MIENTRAS                     |'
+	Escribir '|                                                         |'
+	Escribir '|                   3. Ciclo REPETIR                      |'
+	Escribir '|                                                         |'
+	Escribir '|                                                         |'
+	Escribir '|---------------------------------------------------------|'
+	Leer listado
+	Si listado=1 Entonces
+		Escribir 'Ciclo PARA'
+		a <- 0
+		b <- 1
+		Para i<-1 Hasta num Hacer
+			Escribir a, ' 'Sin Saltar
+			c <- a+b
+			a <- b
+			b <- c
+		FinPara
+		Escribir ''
+		Escribir 'Fin Ciclo PARA'
+	SiNo
+		Si listado=2 Entonces
+			Escribir 'Ciclo MIENTRAS'
+			i <- 1
+			a <- 0
+			b <- 1
+			Mientras i<=num Hacer
+				Escribir a, ' 'Sin Saltar
+				c <- a+b
+				a <- b
+				b <- c
+				i <- i+1
+			FinMientras
+			Escribir ''
+			Escribir 'Fin Ciclo MIENTRAS'
+		SiNo
+			Si listado=3 Entonces
+				Escribir 'Ciclo REPETIR'
+				i <- 1
+				a <- 0
+				b <- 1
+				Repetir
+					Escribir a, ' 'Sin Saltar
+					c <- a+b
+					a <- b
+					b <- c
+					i <- i+1
+				Hasta Que i>num
+				Escribir ''
+				Escribir 'Fin Ciclo REPETIR'
+			FinSi
+		FinSi
+	FinSi
+FinAlgoritmo
